@@ -1,0 +1,141 @@
+body {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(135deg, #333, #000);
+    padding: 20px 40px;
+    border-radius: 20px;
+    margin: 20px;
+    font-size: 3rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 20px;
+    transition: transform 0.3s ease, border 0.3s ease;
+    border: 5px solid transparent;
+}
+
+.image:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    border: 5px solid #333;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.choices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 2rem;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 4rem;
+    gap: 5rem;
+    align-items: baseline;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    animation: slideIn 1s ease-in-out;
+}
+
+#player-score, #computer-score {
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+    font-weight: bold;
+}
+
+.msg-container {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+#msg {
+   
+    color: white;
+    height: 6rem;
+    font-size: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 3rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.button{
+    background-color: #333;
+    color: white;
+    margin-top: 3rem;
+    padding: 1rem;
+
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    border: 5px solid #333;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3)
+    
+    
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

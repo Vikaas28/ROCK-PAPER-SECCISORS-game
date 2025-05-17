@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS Game</title>
+    <link rel="stylesheet" href="RPS.css">
+</head>
+<body>
+    <h1 id="title" style="font-family: Arial, Helvetica, sans-serif;">Rock Paper Scissors</h1>
+    <div class="choices">
+        <div class="image" id="rock">
+            <img src="./images/rock.jpeg" alt="Rock">
+        </div>
+        <div class="image" id="paper">
+            <img src="./images/paper.png" alt="Paper">
+        </div>
+        <div class="image" id="scissors">
+            <img src="./images/secciors.png" alt="Scissors">
+        </div>
+    </div>
+    <div class="score-board">
+        <div class="score">
+            <p id="player-score">Player Score: 0</p>
+        </div>
+        <div class="score">
+            <p id="computer-score">Computer Score: 0</p>
+        </div>
+    </div>
+    <div class="msg-container">
+        <p id="msg">Play your move</p>
+    </div>
+
+    <div class="button">
+        <button id="reset-button">Reset Game</button>
+    </div>
+    <script src="RPS.js"></script>
+</body>
+</html>
